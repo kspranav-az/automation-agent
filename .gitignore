@@ -1,0 +1,7 @@
+.local
+.env
+.config
+attached_assets
+__pycache__
+uv.lock
+.replit

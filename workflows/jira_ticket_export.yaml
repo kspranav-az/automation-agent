@@ -1,0 +1,18 @@
+domain: jira.company.com
+metadata:
+  created: '2025-09-20T11:57:11.479893'
+  description: Export Jira tickets for a project
+  sensitive: false
+name: jira_ticket_export
+steps:
+- action: navigate
+  args:
+    url: https://example.com
+- action: screenshot
+  args:
+    path: jira_export.png
+variables:
+  end_date: str
+  project_key: str
+  start_date: str
+version: '1.0'

@@ -1,0 +1,18 @@
+domain: example.com
+metadata:
+  created: '2025-09-20T11:57:11.479903'
+  description: Simple test workflow
+  sensitive: false
+name: test_navigation
+steps:
+- action: navigate
+  args:
+    url: https://example.com
+- action: screenshot
+  args:
+    path: test.png
+- action: extract
+  args:
+    selector: h1
+variables: {}
+version: '1.0'
