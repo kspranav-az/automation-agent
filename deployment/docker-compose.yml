@@ -1,18 +1,14 @@
 # Docker Compose configuration for Browser Automation System
-# Note: This is provided for reference, but Docker is not supported in Replit environment
-# Use Replit deployment alternatives instead
-
-version: '3.8'
+# Environment variables should be set in the .env file in the project root
 
 services:
   mcp-server:
     build:
       context: ..
       dockerfile: deployment/Dockerfile.mcp-server
+    env_file:
+      - ../.env
     environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
-      - JIRA_USER=${JIRA_USER}
-      - JIRA_PASS=${JIRA_PASS}
       - BROWSER_HEADLESS=true
     ports:
       - "8001:8001"

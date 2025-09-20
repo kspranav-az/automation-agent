@@ -88,8 +88,7 @@ class Router:
         Use AI to parse natural language prompts intelligently
         """
         try:
-            # the newest OpenAI model is "gpt-5" which was released August 7, 2025.
-            # do not change this unless explicitly requested by the user
+           
             response = self.llm.chat.completions.create(
                 model="gpt-5",
                 messages=[
